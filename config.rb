@@ -23,7 +23,7 @@ end
 
 activate :protect_emails
 
-activate :sitemap, hostname: data.settings.site.url
+# activate :sitemap, hostname: data.settings.site.url
 
 
 # activate :google_analytics do |ga|

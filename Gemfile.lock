@@ -99,8 +99,6 @@ GEM
       uglifier (>= 2.5, < 4.0)
     middleman-protect-emails (0.4.0)
       middleman-core (>= 3.4)
-    middleman-sitemap (0.0.13)
-      middleman-core (>= 3.2.2)
     middleman-sprockets (4.1.1)
       middleman-core (~> 4.0)
       sprockets (>= 3.0)
@@ -153,7 +151,6 @@ DEPENDENCIES
   middleman-deploy!
   middleman-google-analytics
   middleman-protect-emails
-  middleman-sitemap
   middleman-sprockets
   pry-byebug
 

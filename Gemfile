@@ -8,7 +8,7 @@ gem 'pry-byebug', require: true
 
 gem 'middleman-protect-emails'
 gem 'middleman-google-analytics'
-gem 'middleman-sitemap'
+
 
 # Assets
 gem 'font-awesome-middleman'
