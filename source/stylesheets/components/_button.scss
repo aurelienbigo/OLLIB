@@ -1,7 +1,7 @@
 .metier {
   margin-top: 10px;
   background-color: white;
-  color: #5bba47 !important;
+  color: $my-green !important;
   text-decoration: none;
   border-radius: 20px;
   border: 1px solid white;
@@ -10,5 +10,16 @@
     background-color: transparent !important;
     border: 1px white solid !important;
     text-decoration: none !important;
+  }
+}
+.btn-contact {
+  background-color: $my-green;
+  color: white;
+  border-radius: 20px;
+  border: 1px solid white;
+  &:hover {
+    background-color: white;
+    color: $my-green;
+    border: 1px solid $my-green;
   }
 }

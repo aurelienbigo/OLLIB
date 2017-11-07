@@ -7,6 +7,15 @@
   margin: 5% 5%;
   text-align: center;
   border-radius: 15px;
+  color: $my-blue;
+  p, a {
+    text-decoration: none;
+    color: $my-blue;
+    &:hover {
+      text-decoration: none;
+      color: $my-green;
+    }
+  }
 }
 .picto-contact {
   font-size: 40px;
@@ -15,3 +24,4 @@
 .formulaire {
   margin-bottom: 25px;
 }
+
