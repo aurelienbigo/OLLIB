@@ -11,11 +11,15 @@ title_seo: "Contacter la société Olli-B Environnement"
     <p><a href=mailto:contact@olb-environnement.fr>contact@olb-environnement.fr</a></p>
     </div>
   </div>
-  <div class="col-xs-12 col-sm-offset-3 col-sm-6 formulaire">
+  <div class="contact-form col-xs-12 col-sm-offset-3 col-sm-6 formulaire">
     <div class="form-area">
-      <form action="mailto:aurelien.bigo@gmail.com" method="GET">
+      <form action="https://getsimpleform.com/messages?form_api_token=11f8878eae9046772298fffc4d2e7972" method="post">
+        <!-- ne pas oublier de modifier la redirection et le token correspondant à l'adresse olb -->
+        <input type='hidden' name='redirect_to' value='http://mbp-de-aurelien.lan:4567/thanks.html' />
+
         <br style="clear:both">
           <h3 style="margin-bottom: 25px; text-align: center;">Formulaire de contact</h3>
+
         <div class="form-group">
           <input type="text" class="form-control" id="nom" name="Nom" placeholder="Nom" required>
         </div>
@@ -38,12 +42,10 @@ title_seo: "Contacter la société Olli-B Environnement"
           <span class="help-block"><p id="characterLeft" class="help-block ">Maximum de caractères atteint</p></span>
         </div>
 
-        <button type="button" id="submit" name="submit" class="btn btn-primary pull-right btn-contact">Envoyer
+        <button type="submit" id="submit" name="submit" class="btn btn-primary pull-right btn-contact">Envoyer
         </button>
-
-
-
       </form>
+
     </div>
   </div>
 
@@ -71,11 +73,14 @@ title_seo: "Contacter la société Olli-B Environnement"
   <script src="https://cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js"></script>
   <script src="https://cdn.rawgit.com/apneadiving/Google-Maps-for-Rails/master/js_compilation/gmaps_google.js"></script>
 
+
+
   <script type="text/javascript">
+    var ollib = new google.maps.LatLng(50.704764,3.1621081000000686);
     var mapOptions =
     {
-    maxZoom:19,
-    minZoom:15,
+    zoom:18,
+    center: ollib,
     };
     var handler = Gmaps.build('Google', { markers: { clusterer: undefined } });
     handler.buildMap({ internal: { id: 'map' } }, function() {
@@ -84,12 +89,13 @@ title_seo: "Contacter la société Olli-B Environnement"
           {
             "lat": 50.704764,
             "lng": 3.1621081000000686,
-            "infowindow": "<h1>Olli-B Environnement</h1><p><img src='logo.png' height='50'></p>"
+            "infowindow": "<img src='images/logo.png' height='40'>"
           }
         ]
       );
       handler.bounds.extendWith(markers);
       handler.fitMapToBounds();
+      handler.getMap().setZoom(12);
     });
   </script>
 </div>
