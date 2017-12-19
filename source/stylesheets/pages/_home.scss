@@ -1,3 +1,8 @@
+body {
+  font-style: helvetica;
+  color: $my-grey;
+}
+
 #home {
   color: white;
   height: 80vh;
@@ -9,11 +14,13 @@
     font-size: 1.8em;
     margin-bottom: 1em;
     margin-top: -2em;
+    font-style: helvetica;
   }
   a {
     color: rgba(0,0,0,0.4);
     font-weight: bold;
     font-size: 18px;
+    font-style: helvetica;
   }
 }
 .profile-picture {
@@ -30,11 +37,13 @@
     font-size: 14px;
     text-align: justify;
     padding: 10px 30px;
+    font-style: helvetica;
   }
   h2 {
     font-size: 30px;
     padding: 10px 30px;
     text-align: left;
+    font-style: helvetica;
   }
 }
 .description-container {
@@ -48,7 +57,7 @@
   color: black;
   h2 {
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 24px;
     color: $my-blue;
   }
 }
