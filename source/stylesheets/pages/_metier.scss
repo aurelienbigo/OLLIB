@@ -1,0 +1,60 @@
+
+.metier-card-container {
+  margin: 2em;
+}
+.metier-card {
+  background-color: white;
+  text-align: left;
+  border-radius: 15px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #E6E6E6;
+  border: 1px solid #E6E6E6;
+  h2 {
+    font-size: 22px;
+    color: $my-blue;
+    text-align: center;
+  }
+  p {
+    font-size: 16px;
+    text-align: justify;
+  }
+  margin-bottom: 5em;
+}
+#img-metier {
+  width: 100%;
+  margin: 10px 0;
+}
+.metier-container {
+  background-color: white;
+  margin-top: 20px;
+  margin: 5% 5%;
+  text-align: left;
+  border-radius: 15px;
+  h1 {
+    padding: 25px 0px;
+    text-align: center;
+    color: $my-green;
+    font-style: helvetica;
+  }
+  p {
+    padding: 10px;
+    font-style: helvetica;
+  }
+}
+.metier-content {
+  padding: 1em 2em;
+  text-align: center;
+}
+.metier-card {
+  line-height: 20pt;
+  text-align: center;
+  ul{
+    padding: 0px 5px;
+    font-size: 16px;
+    li {
+      margin: 20px;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+  }
+}
