@@ -7,7 +7,7 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title>Olli-B Environnement : Contactez-nous.</title>
-    <link href="stylesheets/application-c426d014.css" rel="stylesheet" />
+    <link href="stylesheets/application-10ce4bac.css" rel="stylesheet" />
     <script src="javascripts/application-4476a9fe.js"></script>
     <link href="images/favicon-70dad561.png" rel="icon" type="image/png" />
   </head>
@@ -21,9 +21,10 @@
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
     <a href="./" class="navbar-wagon-item navbar-wagon-link">Accueil</a>
+    <a href="nous.html" class="navbar-wagon-item navbar-wagon-link">Qui sommes-nous</a>
     <a href="metier.html" class="navbar-wagon-item navbar-wagon-link">Notre métier</a>
     <a href="contact.html" class="navbar-wagon-item navbar-wagon-link">Contactez-nous</a>
-    <a href="#" class="fa fa-phone navbar-wagon-item navbar-wagon-link"> +33 9 83 41 43 57 </a>
+    <a href="#" class="fa fa-phone navbar-wagon-item navbar-wagon-link telephone"> +33 9 83 41 43 57 </a>
   </div>
 
   <!-- Dropdown appearing on mobile only -->
@@ -33,6 +34,7 @@
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
         <li><a href="metier.html">Notre métier</a></li>
         <li><a href="contact.html">Nous contacter</a></li>
+        <li><a href="about.html">Qui sommes-nous?</a></li>
       </ul>
     </div>
   </div>
@@ -47,11 +49,15 @@
     <p><a href=#email-protection-pbagnpg@byo-raivebaarzrag.se>contact@olb-environnement.fr</a></p>
     </div>
   </div>
-  <div class="col-xs-12 col-sm-offset-3 col-sm-6 formulaire">
+  <div class="contact-form col-xs-12 col-sm-offset-3 col-sm-6 formulaire">
     <div class="form-area">
-      <form action="#email-protection-nheryvra.ovtb@tznvy.pbz" method="GET">
+      <form action="https://getsimpleform.com/messages?form_api_token=11f8878eae9046772298fffc4d2e7972" method="post">
+        <!-- ne pas oublier de modifier la redirection et le token correspondant à l'adresse olb -->
+        <input type='hidden' name='redirect_to' value='http://mbp-de-aurelien.lan:4567/thanks.html' />
+
         <br style="clear:both">
           <h3 style="margin-bottom: 25px; text-align: center;">Formulaire de contact</h3>
+
         <div class="form-group">
           <input type="text" class="form-control" id="nom" name="Nom" placeholder="Nom" required>
         </div>
@@ -74,12 +80,10 @@
           <span class="help-block"><p id="characterLeft" class="help-block ">Maximum de caractères atteint</p></span>
         </div>
 
-        <button type="button" id="submit" name="submit" class="btn btn-primary pull-right btn-contact">Envoyer
+        <button type="submit" id="submit" name="submit" class="btn btn-primary pull-right btn-contact">Envoyer
         </button>
-
-
-
       </form>
+
     </div>
   </div>
 
@@ -107,11 +111,14 @@
   <script src="https://cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js"></script>
   <script src="https://cdn.rawgit.com/apneadiving/Google-Maps-for-Rails/master/js_compilation/gmaps_google.js"></script>
 
+
+
   <script type="text/javascript">
+    var ollib = new google.maps.LatLng(50.704764,3.1621081000000686);
     var mapOptions =
     {
-    maxZoom:19,
-    minZoom:15,
+    zoom:18,
+    center: ollib,
     };
     var handler = Gmaps.build('Google', { markers: { clusterer: undefined } });
     handler.buildMap({ internal: { id: 'map' } }, function() {
@@ -120,12 +127,13 @@
           {
             "lat": 50.704764,
             "lng": 3.1621081000000686,
-            "infowindow": "<h1>Olli-B Environnement</h1><p><img src='logo.png' height='50'></p>"
+            "infowindow": "<img src='images/logo-832ba611.png' height='40'>"
           }
         ]
       );
       handler.bounds.extendWith(markers);
       handler.fitMapToBounds();
+      handler.getMap().setZoom(12);
     });
   </script>
 </div>
@@ -137,9 +145,11 @@
   <div class="footer-links">
     <a href="mentions.html">Mentions légales</a>
     <a href="contact.html">Nous contacter</a>
+    <a href="nous.html">Qui sommes-nous</a>
+    <a href="metier.html">Notre métier</a>
   </div>
   <div class="footer-copyright">
-    <p><i class="fa fa-copyright" aria-hidden="true"></i> Olli-B Environnement - All right reserved</p>
+    <p><i class="fa fa-copyright" aria-hidden="true"></i> 2018 - Olli-B Environnement - All right reserved</p>
   </div>
 </div>
 
