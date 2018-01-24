@@ -59,6 +59,7 @@ body {
     margin-bottom: 20px;
     font-size: 24px;
     color: $my-blue;
+    text-decoration: none;
   }
 }
 .picto {
@@ -69,4 +70,13 @@ body {
 .icone-home {
   width: 5em;
   margin-top: 30px;
+}
+.metier-links {
+  font-size: 24px;
+  color: $my-blue;
+  text-decoration: none;
+  &:hover {
+    color: $my-grey;
+    text-decoration: none;
+  }
 }

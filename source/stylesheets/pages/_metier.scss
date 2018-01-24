@@ -1,4 +1,3 @@
-
 .metier-card-container {
   margin: 2em;
 }
@@ -34,6 +33,12 @@
     padding: 25px 0px;
     text-align: center;
     color: $my-green;
+    font-style: helvetica;
+  }
+  h2 {
+    padding: 25px 0px;
+    text-align: center;
+    color: $my-blue;
     font-style: helvetica;
   }
   p {

@@ -20,6 +20,12 @@ GEM
     autoprefixer-rails (7.1.5)
       execjs
     backports (3.10.0)
+    better_errors (2.4.0)
+      coderay (>= 1.0.0)
+      erubi (>= 1.0.0)
+      rack (>= 0.9.0)
+    binding_of_caller (0.8.0)
+      debug_inspector (>= 0.0.1)
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
@@ -33,7 +39,9 @@ GEM
       sass (>= 3.2, < 3.5)
     concurrent-ruby (1.0.5)
     contracts (0.13.0)
+    debug_inspector (0.0.3)
     dotenv (2.2.1)
+    erubi (1.7.0)
     erubis (2.7.0)
     execjs (2.7.0)
     fast_blank (1.0.0)
@@ -143,6 +151,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  better_errors
+  binding_of_caller
   bootstrap-sass
   font-awesome-middleman
   jquery-middleman

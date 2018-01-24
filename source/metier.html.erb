@@ -7,23 +7,24 @@ description: "Olli-B grâce à son indépendance, permet de proposer à l’ense
 <div class="metier-container">
   <div class="metier-content">
     <h1>Les déchets, notre métier</h1>
-    <p>Olli-B grâce à son indépendance et ses 25 années d'expérience, permet de proposer à l'ensemble des industriels, des filières de traitement ou de valorisation agrées les plus compétitives. Le tout en offrant une prestation globale pour la recherche de ces filières.</p>
+    <p>Olli-B grâce à son indépendance et ses 30 années d'expérience, permet de proposer à l'ensemble des industriels, <strong><u>des filières de traitement ou de valorisation agrées</u></strong> les plus compétitives. Le tout en offrant une prestation globale pour la recherche de ces filières.</p>
   </div>
 
   <div class="row metier-card-container">
     <div class="col-xs-12 col-md-4 ">
       <div class="col-xs-12 metier-card" align="center">
-        <h2>Collecte et traitement de déchets dangereux et non dangereux</h2>
-          <%= image_tag "olli-b-déchets-dangereux.jpg", id: "img-metier" %>
+        <h2><%= link_to "Collecte de déchets dangereux et non dangereux", "metier-dechets.html", class: "metier-links" %></h2>
+          <%= link_to image_tag("olli-b-déchets-dangereux.jpg", id: "img-metier"), "metier-dechets.html" %>
         <p>
-          La collecte de déchets est large et concerne tout types de déchets classiques ou toxiques. Nous procédons à l’enlèvement d’eaux souillées, de boues, de gateaux de filtres presse, de bout de lagune ainsi que de tout types d’acides et bases La collecte se fait directement chez vous par camions citerne ou par benne selon la nature des déchets et leur conditionnement : vrac ou conditionnés. Quelque soit la nature et l ‘état de vos déchets, nous trouverons une solution innovante adaptée à vos besoins.
+          La collecte de déchets concerne tout types de <strong>déchets classiques ou toxiques</strong>. Nous procédons à l’enlèvement d’eaux souillées, de boues, tout types d’acides et bases, etc... La collecte se fait directement chez vous par camions citerne ou par benne selon la nature des déchets et leur conditionnement. Quelque soit la nature et l ‘état de vos déchets, nous trouverons une solution innovante adaptée à vos besoins.
         </p>
+        <%= link_to "En savoir plus", "metier-dechets.html", class: "btn btn-primary btn-contact savoir-plus" %>
       </div>
     </div>
     <div class="col-xs-12 col-md-4">
       <div class="col-xs-12 metier-card" align="center">
-        <h2>Valorisation en cimenterie de combustibles de substitution</h2>
-          <%= image_tag "olli-b-cimenterie.png", id: "img-metier" %>
+        <h2><%= link_to "Valorisation en cimenterie de combustibles de substitution", "metier-cimenterie", class: "metier-links" %></h2>
+          <%= link_to image_tag("olli-b-cimenterie.png", id: "img-metier"), "metier-cimenterie.html" %>
           <ul>
             <li> Collecte de semences traitées </li>
             <li> Poudre de polyuréthane </li>
@@ -31,16 +32,19 @@ description: "Olli-B grâce à son indépendance, permet de proposer à l’ense
             <li> Charbons actifs </li>
             <li> Produit a fort PCi </li>
           </ul>
+          <%= link_to "En savoir plus", "metier-cimenterie.html", class: "btn btn-primary btn-contact savoir-plus" %>
         </div>
       </div>
 
       <div class="col-xs-12 col-md-4">
         <div class="col-xs-12 metier-card" align="center">
-        <h2>Assainissement de friche industrielle</h2>
-          <%= image_tag "ollib-friche-industrielle.png", id: "img-metier" %>
-        <p>Vous avez un site a traiter entièrement ou laissé à l'abandon ?
-        Nous prenons totalement en charge la dépollution du site tout types de déchets confudus y compris les déchets toxiques, le démentellement, la pollution des sols, le désiamiantage éventuel, le curage des bâtiments, etc...</p>
+        <h2><%= link_to "Assainissement friche industrielle", "metier-friches.html", class: "metier-links" %></h2>
+          <%= link_to image_tag("ollib-friche-industrielle.png", id: "img-metier"), "metier-friches.html" %>
+        <p>Vous avez un site a traiter entièrement ou laissé à l'abandon ? </br>
+        Nous prenons <strong>totalement en charge la dépollution du site tout types de déchets confudus</strong> y compris les déchets toxiques, le démentellement, la pollution des sols, le désiamiantage éventuel, le curage des bâtiments, etc...</p>
+        <%= link_to "En savoir plus", "metier-friches.html", class: "btn btn-primary btn-contact savoir-plus" %>
         </div>
       </div>
     </div>
 </div>
+

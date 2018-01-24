@@ -14,5 +14,7 @@ gem 'middleman-google-analytics'
 gem 'font-awesome-middleman'
 gem 'bootstrap-sass'
 gem 'jquery-middleman'
+gem 'better_errors'
+gem 'binding_of_caller'
 
 

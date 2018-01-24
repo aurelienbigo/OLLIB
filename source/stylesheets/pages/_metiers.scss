@@ -1,0 +1,22 @@
+.banner-metier {
+  height: 40vh;
+  background-size: cover !important;
+  background: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px 15px 0 0;
+}
+#dechets-content {
+  vertical-align: middle;
+  h1 {
+    color: white;
+    font-size: 1.8em;
+    font-style: helvetica;
+  }
+}
+.dechets-text{
+  h2 {
+    color: $my-green;
+  }
+}

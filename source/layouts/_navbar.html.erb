@@ -8,7 +8,14 @@
   <div class="navbar-wagon-right hidden-xs hidden-sm">
     <%= link_to "Accueil", "index.html", class: "navbar-wagon-item navbar-wagon-link" %>
     <%= link_to "Qui sommes-nous", "nous.html", class: "navbar-wagon-item navbar-wagon-link" %>
-    <%= link_to "Notre métier", "metier.html", class: "navbar-wagon-item navbar-wagon-link" %>
+    <div class="dropdown">
+      <%= link_to "Notre métier", "metier.html", class: "navbar-wagon-item navbar-wagon-link dropbtn" %>
+      <div class="dropdown-content">
+        <%= link_to "Traitement des déchets", "metier-dechets.html", class: "navbar-wagon-item navbar-wagon-link" %>
+        <%= link_to "Valorisation en cimenterie", "metier-cimenterie.html", class: "navbar-wagon-item navbar-wagon-link" %>
+        <%= link_to "Assainissement de friches", "metier-friches.html", class: "navbar-wagon-item navbar-wagon-link" %>
+      </div>
+    </div>
     <%= link_to "Contactez-nous", "contact.html", class: "navbar-wagon-item navbar-wagon-link" %>
     <%= link_to " +33 9 83 41 43 57 ", '#', class: "fa fa-phone navbar-wagon-item navbar-wagon-link telephone" %>
   </div>
@@ -18,6 +25,7 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><a href="index.html">Accueil</a></li>
         <li><a href="metier.html">Notre métier</a></li>
         <li><a href="contact.html">Nous contacter</a></li>
         <li><a href="about.html">Qui sommes-nous?</a></li>
