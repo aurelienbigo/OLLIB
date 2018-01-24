@@ -1,3 +1,7 @@
+body {
+  font-size: 16px;
+  font-family: helvetica;
+}
 .banner-metier {
   height: 40vh;
   background-size: cover !important;
@@ -16,7 +20,17 @@
   }
 }
 .dechets-text{
+  padding: 0 5% 7% 5%;
   h2 {
     color: $my-green;
+  }
+  ul{
+    padding: 0 3%;
+    font-size: 16px;
+    li {
+      margin: 20px;
+      margin-bottom: 10px;
+      text-align: left;
+    }
   }
 }
