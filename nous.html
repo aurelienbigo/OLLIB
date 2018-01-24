@@ -7,8 +7,8 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title>Olli-b Environnement - Qui sommes-nous ?</title>
-    <link href="stylesheets/application-10ce4bac.css" rel="stylesheet" />
-    <script src="javascripts/application-4476a9fe.js"></script>
+    <link href="stylesheets/application-07f1c53d.css" rel="stylesheet" />
+    <script src="javascripts/application-4cfc60c2.js"></script>
     <link href="images/favicon-70dad561.png" rel="icon" type="image/png" />
   </head>
   <body>
@@ -22,7 +22,14 @@
   <div class="navbar-wagon-right hidden-xs hidden-sm">
     <a href="./" class="navbar-wagon-item navbar-wagon-link">Accueil</a>
     <a href="nous.html" class="navbar-wagon-item navbar-wagon-link">Qui sommes-nous</a>
-    <a href="metier.html" class="navbar-wagon-item navbar-wagon-link">Notre métier</a>
+    <div class="dropdown">
+      <a href="metier.html" class="navbar-wagon-item navbar-wagon-link dropbtn">Notre métier</a>
+      <div class="dropdown-content">
+        <a href="metier-dechets.html" class="navbar-wagon-item navbar-wagon-link">Traitement des déchets</a>
+        <a href="metier-cimenterie.html" class="navbar-wagon-item navbar-wagon-link">Valorisation en cimenterie</a>
+        <a href="metier-friches.html" class="navbar-wagon-item navbar-wagon-link">Assainissement de friches</a>
+      </div>
+    </div>
     <a href="contact.html" class="navbar-wagon-item navbar-wagon-link">Contactez-nous</a>
     <a href="#" class="fa fa-phone navbar-wagon-item navbar-wagon-link telephone"> +33 9 83 41 43 57 </a>
   </div>
@@ -32,6 +39,7 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><a href="index.html">Accueil</a></li>
         <li><a href="metier.html">Notre métier</a></li>
         <li><a href="contact.html">Nous contacter</a></li>
         <li><a href="about.html">Qui sommes-nous?</a></li>
@@ -42,32 +50,27 @@
 
     <div class="nous-container">
   <div class="nous-content">
-
     <h1>Qui sommes-nous ?</h1>
+    <div class="row">
+      <div class="col-xs-12 col-md-4" align="center">
+        <img src="images/recyclage-b4ffbbcd.jpg" class="img-nous" alt="Recyclage" />
+      </div>
 
-      <div class="row">
-
-        <div class="col-xs-12 col-md-4" align="center">
-          <img src="images/recyclage-b4ffbbcd.jpg" class="img-nous" alt="Recyclage" />
-        </div>
-
-        <div clas="col-xs-12 col-md-8">
+      <div clas="col-xs-12 col-md-8">
         <p>
           Olli-B Environnement est une société indépendante qui bénéficie de plus de 25 ans d'expérience dans le domaine du traitement de déchets.
         </p>
         <p>
           Notre offre est plus compétitive car elle est innovante et adaptée à chacun de nos clients.
-         </p>
+        </p>
         <ul>Vous pourriez avoir besoin de noous pour le traitement ou la valorisation :
 
           <li>Des déchets liquides ou solides : polluants – toxiques – corrosifs</li>
           <li>En petite moyenne ou grande quantité</li>
           <li>En vrac ou conditionnées (fûts, bidons IBC)</li>
         </ul>
-
-
-        </div>
       </div>
+    </div>
   </div>
 </div>
 
@@ -77,6 +80,9 @@
     <a href="contact.html">Nous contacter</a>
     <a href="nous.html">Qui sommes-nous</a>
     <a href="metier.html">Notre métier</a>
+  </div>
+  <div class="footer-social" align="center">
+    <a href="https://www.linkedin.com/company/25532023/" class="fa fa-linkedin-square" target="_blank"></a>
   </div>
   <div class="footer-copyright">
     <p><i class="fa fa-copyright" aria-hidden="true"></i> 2018 - Olli-B Environnement - All right reserved</p>
