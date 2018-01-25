@@ -1,5 +1,5 @@
 .metier-card-container {
-  margin: 2em;
+  margin: 1%;
 }
 .metier-card {
   background-color: white;
@@ -17,7 +17,7 @@
     font-size: 16px;
     text-align: justify;
   }
-  margin-bottom: 5em;
+  margin-bottom: 10%;
 }
 #img-metier {
   width: 100%;
@@ -30,7 +30,7 @@
   text-align: left;
   border-radius: 15px;
   h1 {
-    padding: 25px 0px;
+    padding: 35px 0px;
     text-align: center;
     color: $my-green;
     font-style: helvetica;
@@ -42,12 +42,11 @@
     font-style: helvetica;
   }
   p {
-    padding: 10px;
     font-style: helvetica;
   }
 }
 .metier-content {
-  padding: 1em 2em;
+  padding: 0 5% 3% 5%;
   text-align: center;
 }
 .metier-card {
