@@ -24,6 +24,10 @@ end
 activate :protect_emails
 
 
+# Use “pretty” URLs (without the `.html` suffix)
+activate :directory_indexes
+
+
 # activate :sitemap, hostname: data.settings.site.url
 
 
