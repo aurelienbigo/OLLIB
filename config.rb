@@ -28,6 +28,15 @@ activate :protect_emails
 activate :directory_indexes
 
 
+activate :deploy do |deploy|
+  deploy.method   = :ftp
+  deploy.host            = 'ftp.cluster021.hosting.ovh.net'
+  deploy.path            = '/srv/www/site'
+  deploy.user            = 'decoboutlw'
+  deploy.password        = 'Kitesurf9463'
+end
+
+
 # activate :sitemap, hostname: data.settings.site.url
 
 
