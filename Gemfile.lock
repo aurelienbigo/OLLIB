@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/lewagon/middleman-deploy.git
+  revision: 4f97af2034d6e7548a172d89a2a37fc263c6c987
+  specs:
+    middleman-deploy (2.0.0.pre.alpha)
+      middleman-core (>= 3.2)
+      net-sftp
+      ptools
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -91,10 +100,6 @@ GEM
       servolux
       tilt (~> 2.0)
       uglifier (~> 3.0)
-    middleman-deploy (1.0.0)
-      middleman-core (>= 3.2)
-      net-sftp
-      ptools
     middleman-google-analytics (3.0.0)
       activesupport (>= 4.1, < 5.1)
       erubis
@@ -157,7 +162,7 @@ DEPENDENCIES
   jquery-middleman
   middleman (~> 4.2)
   middleman-autoprefixer (~> 2.7)
-  middleman-deploy
+  middleman-deploy!
   middleman-google-analytics
   middleman-protect-emails
   middleman-sprockets
@@ -167,4 +172,4 @@ DEPENDENCIES
   rake
 
 BUNDLED WITH
-   1.16.2
+   1.16.4
