@@ -16,10 +16,10 @@ configure :build do
   set :relative_links, true
 end
 
-activate :deploy do |deploy|
-  deploy.build_before = true
-  deploy.deploy_method = :git
-end
+# activate :deploy do |deploy|
+#   deploy.build_before = true
+#   deploy.deploy_method = :git
+# end
 
 activate :protect_emails
 
@@ -31,7 +31,7 @@ activate :directory_indexes
 activate :deploy do |deploy|
   deploy.method   = :ftp
   deploy.host            = 'ftp.cluster021.hosting.ovh.net'
-  deploy.path            = '/srv/www/site'
+  deploy.path            = '/home/decoboutlw'
   deploy.user            = 'decoboutlw'
   deploy.password        = 'Kitesurf9463'
 end
